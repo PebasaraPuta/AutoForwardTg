@@ -23,11 +23,11 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 # start the bot
 print("Starting...")
 try:
-    apiid = config("APP_ID", cast=int)
-    apihash = config("API_HASH")
-    bottoken = config("BOT_TOKEN")
-    frm = config("FROM_CHANNEL", cast=int)
-    tochnl = config("TO_CHANNEL", cast=int)
+    apiid = "2192067"
+    apihash = "d2e0ba99f1b9cdb632b43633edb76f11"
+    bottoken = "5067683386:AAEKr6Z8UnBW1lViQYhJYZIqkViXUqmNt18"
+    frm = "-1001756560471"
+    tochnl = "-1001462147666"
     datgbot = TelegramClient('bot', apiid, apihash).start(bot_token=bottoken)
 except:
     print("Environment vars are missing! Kindly recheck.")
@@ -70,5 +70,5 @@ async def _(event):
 
 
 print("Bot has started.")
-print("Do visit @its_xditya..")
+print("Do visit @HighTechRocket ..")
 datgbot.run_until_disconnected()
